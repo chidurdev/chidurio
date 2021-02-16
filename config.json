@@ -17,14 +17,17 @@
   "RANDOM_COLORS": false,
   "BANNED_CHARACTER_REGEX": "/[\uFDFD\u200E\u0000]/gi", 
   "ROOM_SETUP": [
-[ "bas1", "norm", "norm", "norm","norm", "norm", "roid"],
-    [ "norm", "dom3", "rock", "rock","rock", "dom2", "norm"],
-    [ "norm", "rock", "nest", "nest","nest", "rock", "norm"],
-    [ "norm", "rock", "nest", "dom1","nest", "rock", "norm"],
-    [ "norm", "rock", "nest", "nest","nest", "rock", "norm"],
-    [ "norm", "dom4", "rock", "rock","rock", "dom5", "norm"],
-    [ "roid", "norm", "norm", "norm","norm", "norm", "bas3"]
-    ],
+    [ "bas4", "norm", "nest", "nest", "nest", "norm", "bas3"  ],
+    [ "norm", "maze", "nest", "maze", "nest", "maze", "norm"  ],
+    [ "maze", "nest", "maze", "norm", "maze", "nest", "maze"  ],
+    [ "nest", "nest", "maze", "nest", "maze", "nest", "nest"  ],
+    [ "nest", "maze", "nest", "nest", "nest", "maze", "nest" ],
+    [ "nest", "maze", "nest", "nest", "nest", "maze", "nest" ],
+    [ "nest", "nest", "maze", "nest", "maze", "nest", "nest"  ],
+    [ "maze", "nest", "maze", "norm", "maze", "nest", "maze"  ],
+    [ "norm", "maze", "nest", "maze", "nest", "maze", "norm" ],
+    [ "bas2", "norm", "nest", "nest", "nest", "norm", "bas1" ]
+     ],
   "X_GRID": 7,
   "Y_GRID": 10,
   "DAMAGE_CONSTANT": 0.6,
@@ -63,8 +66,5 @@
   "FOOD_AMOUNT": 0.4, 
   "SKILL_BOOST": 50,
   "BOTS": 3,
-  "GLASS_HEALTH_FACTOR": 2,
-  "NUMBER_OF_DOMS": 4,
- "D_NAMES": ["North East","North West", "South West","South East"]
-
+  "GLASS_HEALTH_FACTOR": 2
 }

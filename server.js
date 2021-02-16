@@ -81,10 +81,6 @@ room.findType("bas3");
 room.findType("bas4");
 room.findType("roid");
 room.findType("rock");
-for (let it = 1; it < 10; it++){
-	room.findType('dom' + it);
-}
-
 room.findType("maze");
 room.findType("dom1");
 room.findType("dom2");
@@ -3009,15 +3005,13 @@ class Entity {
           }
           // Only if we give messages
           if (dothISendAText) {
-              if(instance.master.type !== "dominator"){
             instance.sendMessage(
               "You killed " +
                 name +
-                (killers.length > 1 ? " (with some help of friend ?)." : "."));
+                (killers.length > 1 ? " (with some help of friend ?)." : ".")
+            );
           }
-        }
         });
-    
         // Prepare the next part of the next
         killText = killText.slice(0, -4);
         killText += "destroyed you with the ";
@@ -3106,9 +3100,6 @@ class Entity {
     // Remove from the collision grid
     this.removeFromGrid();
     this.isGhost = true;
-    if (this.ondeath)this.ondeath();
-
-
   }
 
   isDead() {
